@@ -1,0 +1,14 @@
+.table-striped>tbody>tr:nth-child(4n+1)>td,
+.table-striped>tbody>tr:nth-child(4n+2)>td {
+  background-color: #f6f6f6;
+}
+
+.table-striped>tbody>tr:nth-child(4n+3)>td,
+.table-striped>tbody>tr:nth-child(4n+4)>td {
+  background-color: #ffffff;
+}
+
+.table-striped>tbody>tr:nth-child(4n+2)>td,
+.table-striped>tbody>tr:nth-child(4n+4)>td {
+  border-top: 0;
+}

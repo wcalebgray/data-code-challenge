@@ -1,0 +1,20 @@
+<span>
+  {{#if this.user.email}}
+    <a href="mailto:{{this.user.email}}">
+      {{!-- refactor this and the next chunk into a component? --}}
+      {{#if this.user.fullname}}
+        {{this.user.fullname}}
+      {{else if this.user.username}}
+        {{this.user.username}}
+      {{else}}
+        {{this.user.email}}
+      {{/if}}
+    </a>
+  {{else}}
+    {{#if this.user.fullname}}
+      {{this.user.fullname}}
+    {{else if this.user.username}}
+      {{this.user.username}}
+    {{/if}}
+  {{/if}}
+</span>

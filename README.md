@@ -1,7 +1,22 @@
 # data-code-challenge
 
 This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+
+This is a simple application to display data related to file transfer progress.
+
+Areas for improvement:
+* Implement automated tests
+* Abstract some helper logic out into services
+* Abstract data sorting logic from app/routes/data into service
+* Add loading interface when fetching data
+* Possibly move header into component
+
+All areas for improvement are implicitly requiring a more thorough understanding of Ember and the proper conventions to follow
+
+ASSUMPTIONS:
+* data.remaining is time in milliseconds
+* sorting first by if an end_date exists and then in ascending order of end_date
+
 
 ## Prerequisites
 

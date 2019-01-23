@@ -1,0 +1,23 @@
+{{outlet}}
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Status</th>
+      <th scope="col">Progress</th>
+      <th scope="col">User</th>
+      <th scope="col">Request Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each this.model as |progressItem|}}
+      {{#if progressItem.error}}
+        <tr>
+          <td scope="row" class="status-cell" colspan="4">{{progressItem.error}}</td>
+        </tr>
+      {{else}}
+        {{status-row data=progressItem}}
+        {{nice-status data=progressItem}}
+      {{/if}}
+    {{/each}}
+  </tbody>
+</table>
